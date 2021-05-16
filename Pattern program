@@ -1,0 +1,29 @@
+public class PatternProgram{
+public static void main(String[] args){
+PatternProgram obj = new PatternProgram();
+obj.methed1();
+}
+public void methed1(){
+int col2 = 0;
+while(col2<100){
+int i = 1;
+int row = 1;
+while(row<=6){
+	int col = 6+col2;
+		while(col>=row){
+			System.out.print(" "+" ");
+			col--;
+		}
+			int col1 = 0;
+			while(col1<i){
+				System.out.print(" "+"#"+" "+" ");
+				col1++;
+			}
+			i++;
+			System.out.println();
+			row++;
+}
+col2++;
+}
+}
+}
